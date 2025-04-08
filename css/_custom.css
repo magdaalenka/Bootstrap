@@ -1,0 +1,64 @@
+:root {
+    --text-blue: #00d2ff;
+    --text-purple: #a100ff;
+    --text-pink: #BF25E0;
+    --text-red: #e80756;
+    /*--background-purple: #d694ec;
+    --background-red: #f379a2;
+    --btn-blue: #00d2ff;*/
+}
+
+.welcome-info {
+    background: url("../images/background.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-purple{
+    color:var(--text-purple);
+}
+
+.text-pink{
+    color:var(--text-pink);
+}
+
+.text-red{
+    color: var(--text-red);
+}
+
+.card-img-top{
+    padding: 25px 0 5px 0;
+}
+
+/*.background-purple{
+    background-color: var(--background-purple);
+}
+
+.background-red{
+    background-color: var(--background-red);
+}
+
+
+.btn-blue {
+    color: var(--btn-blue);
+}
+*/
+
+.btn-blue {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #00d2ff;
+    --bs-btn-border-color:#00d2ff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1889a1;
+    --bs-btn-hover-border-color: #1889a1;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    /*--bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);*/
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #00d2ff;
+    --bs-btn-disabled-border-color: #00d2ff;
+}
+
