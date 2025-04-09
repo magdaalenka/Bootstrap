@@ -6,6 +6,7 @@
     <title>Apple page</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="css/_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -24,7 +25,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#product">Product</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#review">Review</a>
                     </li>
                     <li class="nav-item">
@@ -188,30 +189,44 @@
     <section>
         <div class="container mt-5">
             <h2 id="contact us" class="text-center mt-5 mb-4 text-red"><strong>Contact Us</strong></h2>
-            <form>
-                <!-- Name field -->
-                <div class="mb-3">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Apple Inc.</strong></p>
+                        <p>One Apple Park Way</p>
+                        <p>Cupertino, CA 95014</p>
+                        <p>USA</p>
+                        <p><strong>Customer support:</strong></p>
+                        <p>Telefon: +420 800 701 391</p>
+                        <p>Email: contact@apple.com</p>
+                        <a href="https://support.apple.com/contact">Apple Support</a>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <!-- Name field -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <!-- Email field -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <!-- Message field -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-blue mb-3">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <!-- Email field -->
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                </div>
-                <!-- Message field -->
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
-                </div>
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-blue mb-3">Submit</button>
-            </form>
         </div>
     </section>
     <section>
         <div class="container text-center">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark">
                 <div class="carousel-inner my-5">
                     <div class="carousel-item active">
                         <img src="images/logo-evolution.jpg" class="d-block w-100" alt="logo evolution">
@@ -238,6 +253,35 @@
         </div>
     </section>
 </main>
+<footer>
+    <!-- pro ikony sociálních sítí použijeme fontwesome, což jsou ikony, odkaz na knihovnu je v sekci head-->
+    <div class="social-icons">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube-play"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <nav>
+        <ul class="footer-links">
+            <li class="footer-links">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="footer-links">
+                <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="footer-links">
+                <a class="nav-link" href="#review">Review</a>
+            </li>
+            <li class="footer-links">
+                <a class="nav-link" href="#contact us">Contact Us</a>
+            </li>
+            <li class="footer-links">
+                <a class="nav-link" href="#carouselExampleFade">Apple Evolution</a>
+            </li>
+        </ul>
+    </nav>
+    <p class="copyright"><i class="fa fa-copyright"></i>  Copyright Magdaléna Čížová 2025</p>
+</footer>
 <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

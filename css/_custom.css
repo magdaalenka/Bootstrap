@@ -62,3 +62,58 @@
     --bs-btn-disabled-border-color: #00d2ff;
 }
 
+footer {
+    padding: 16px 0 16px 0;
+    background-color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons .fa {
+    font-size: 38px;
+}
+
+.social-icons .fa:hover {
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    color: #4444d3;
+}
+.fa-instagram {
+    color: #ea147d;
+}
+
+.fa-youtube-play {
+    color: #ff0101;
+}
+
+.fa-twitter{
+    color: #376fe1;
+}
+
+.footer-links {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+    font-size: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0 0 10px;
+}
