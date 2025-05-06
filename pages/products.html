@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row bg-light">
+        <!-- sidebar -->
+        <div class="col-sm-4 col-md-3 col-lg-2 d-flex flex-column bg-dark p-4 vh-100">
+            <h1 class="text-white ">Admin Panel</h1>
+            <hr class="text-white">
+            <nav class="nav d-flex flex-column">
+                <a class="nav-link text-white py-2 px-0" href="dashboard.html">
+                    <i class="fa fa-dashboard" style="font-size:20px"></i>
+                    Dashboard
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="products.html">
+                    <i class="fa fa-list" style="font-size:20px"></i>
+                    Products
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="orders.html">
+                    <i class="fa fa-credit-card" style="font-size:20px"></i>
+                    Orders
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="users.html">
+                    <i class="fa fa-user" style="font-size:20px"></i>
+                    Users
+                </a>
+            </nav>
+            <div class="mt-auto">
+                <hr class="text-white">
+                <a class="nav-link" href="user-profile.html">
+                    <p class="text-white my-0">Magda Čížová</p>
+                </a>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="col-sm-8 col-md-9 col-log-10 bg-light vh-100 p-4">
+            <h2>Products</h2>
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="table-dark">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price (USD)</th>
+                    <th>Stock Quantity</th>
+                    <th>          </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>#101</td>
+                    <td>iPhone 15 Pro</td>
+                    <td>Smartphones</td>
+                    <td>$999</td>
+                    <td>120</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#102</td>
+                    <td>MacBook Air M2</td>
+                    <td>Laptops</td>
+                    <td>$1,099</td>
+                    <td>80</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#103</td>
+                    <td>iPad Pro 12.9</td>
+                    <td>Tablets</td>
+                    <td>$1,099</td>
+                    <td>150</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#104</td>
+                    <td>Apple Watch Series 8</td>
+                    <td>Watches</td>
+                    <td>$399</td>
+                    <td>200</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#105</td>
+                    <td>AirPods Pro 2</td>
+                    <td>Accessories</td>
+                    <td>$249</td>
+                    <td>300</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#106</td>
+                    <td>iMac 24"</td>
+                    <td>Desktops</td>
+                    <td>$1,299</td>
+                    <td>60</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#107</td>
+                    <td>Mac Mini M2</td>
+                    <td>Desktops</td>
+                    <td>$699</td>
+                    <td>95</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#108</td>
+                    <td>iPhone SE 3</td>
+                    <td>Smartphones</td>
+                    <td>$429</td>
+                    <td>180</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#109</td>
+                    <td>Apple TV 4K</td>
+                    <td>Accessories</td>
+                    <td>$179</td>
+                    <td>220</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#110</td>
+                    <td>MacBook Pro 14"</td>
+                    <td>Laptops</td>
+                    <td>$1,999</td>
+                    <td>70</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#111</td>
+                    <td>AirPods 3</td>
+                    <td>Accessories</td>
+                    <td>$179</td>
+                    <td>250</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#112</td>
+                    <td>HomePod Mini</td>
+                    <td>Accessories</td>
+                    <td>$99</td>
+                    <td>350</td>
+                    <td>
+                        <div class="dropdown d-flex align-items-center justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                    Add Product
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="productID" class="form-label">Product ID</label>
+                                    <input type="text" class="form-control" id="productID">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="category" class="form-label">Category</label>
+                                    <input type="text" class="form-control" id="category">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="price" class="form-label">Price (USD)</label>
+                                    <input type="text" class="form-control" id="price">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="quantity" class="form-label">Quantity</label>
+                                    <input type="text" class="form-control" id="quantity">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">
+                                <a class="nav-link text-white" href="products.html">Save</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

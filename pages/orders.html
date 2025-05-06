@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row bg-light">
+        <!-- sidebar -->
+        <div class="col-sm-4 col-md-3 col-lg-2 d-flex flex-column bg-dark p-4 vh-100">
+            <h1 class="text-white ">Admin Panel</h1>
+            <hr class="text-white">
+            <nav class="nav d-flex flex-column">
+                <a class="nav-link text-white py-2 px-0" href="dashboard.html">
+                    <i class="fa fa-dashboard" style="font-size:20px"></i>
+                    Dashboard
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="products.html">
+                    <i class="fa fa-list" style="font-size:20px"></i>
+                    Products
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="orders.html">
+                    <i class="fa fa-credit-card" style="font-size:20px"></i>
+                    Orders
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="users.html">
+                    <i class="fa fa-user" style="font-size:20px"></i>
+                    Users
+                </a>
+            </nav>
+            <div class="mt-auto">
+                <hr class="text-white">
+                <a class="nav-link" href="user-profile.html">
+                    <p class="text-white my-0">Magda Čížová</p>
+                </a>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="col-sm-8 col-md-9 col-log-10 bg-light vh-100 p-4">
+            <h2>Orders</h2>
+            <div class="container mt-4">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Products</th>
+                        <th>Order Date</th>
+                        <th>Total (USD)</th>
+                        <th>            </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>#5012</td>
+                        <td>Henry Walker</td>
+                        <td>AirPods Max, AppleCare+</td>
+                        <td>2025-05-7</td>
+                        <td>$728</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5011</td>
+                        <td>Amelia Lewis</td>
+                        <td>iPhone 15, Silicone Case, MagSafe Charger</td>
+                        <td>2025-05-05</td>
+                        <td>$1,147</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5010</td>
+                        <td>Lucas White</td>
+                        <td>Mac Studio, Studio Display</td>
+                        <td>2025-05-03</td>
+                        <td>$3,998</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5009</td>
+                        <td>Charlotte Thompson</td>
+                        <td>iPad Mini, Smart Folio</td>
+                        <td>2025-04-24</td>
+                        <td>$699</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5008</td>
+                        <td>Benjamin Moore</td>
+                        <td>HomePod Mini (2x), Apple TV 4K</td>
+                        <td>2025-04-14</td>
+                        <td>$478</td><td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5007</td>
+                        <td>Mia Hernandez</td>
+                        <td>iPhone 14, Apple Watch SE</td>
+                        <td>2025-04-08</td>
+                        <td>$1,098</td>
+                        <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Detail</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5006</td>
+                        <td>William Martinez</td>
+                        <td>iMac 24", Magic Mouse, Trackpad</td>
+                        <td>2025-04-01</td>
+                        <td>$1,849</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5005</td>
+                        <td>Isabella Garcia</td>
+                        <td>MacBook Air M2, USB-C Hub</td>
+                        <td>2025-03-22</td>
+                        <td>$1,269</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5004</td>
+                        <td>James Davis</td>
+                        <td>iPad Pro, Magic Keyboard, Apple Pencil</td>
+                        <td>2025-03-12</td>
+                        <td>$1,478</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5003</td>
+                        <td>Olivia Martin</td>
+                        <td>iPhone SE, AirPods 3</td>
+                        <td>2025-03-05</td>
+                        <td>$728</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5002</td>
+                        <td>Daniel Wilson</td>
+                        <td>Mac Mini M2, Magic Keyboard</td>
+                        <td>2025-02-28</td>
+                        <td>$899</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#5001</td>
+                        <td>Sophia Brown</td>
+                        <td>Apple Watch Ultra 2, AirTag (4-pack)</td>
+                        <td>2025-02-16</td>
+                        <td>$1,099</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

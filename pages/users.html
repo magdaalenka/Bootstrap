@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row bg-light">
+        <!-- sidebar -->
+        <div class="col-sm-4 col-md-3 col-lg-2 d-flex flex-column bg-dark p-4 vh-100">
+            <h1 class="text-white ">Admin Panel</h1>
+            <hr class="text-white">
+            <nav class="nav d-flex flex-column">
+                <a class="nav-link text-white py-2 px-0" href="dashboard.html">
+                    <i class="fa fa-dashboard" style="font-size:20px"></i>
+                    Dashboard
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="products.html">
+                    <i class="fa fa-list" style="font-size:20px"></i>
+                    Products
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="orders.html">
+                    <i class="fa fa-credit-card" style="font-size:20px"></i>
+                    Orders
+                </a>
+                <a class="nav-link text-white py-2 px-0" href="users.html">
+                    <i class="fa fa-user" style="font-size:20px"></i>
+                    Users
+                </a>
+            </nav>
+            <div class="mt-auto">
+                <hr class="text-white">
+                <a class="nav-link" href="user-profile.html">
+                    <p class="text-white my-0">Magda Čížová</p>
+                </a>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="col-sm-8 col-md-9 col-log-10 bg-light vh-100 p-4">
+            <h2>Users</h2>
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="table-dark">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Anna</td>
+                    <td>Novak</td>
+                    <td>anna.novak@example.com</td>
+                    <td>+420 601 123 456</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>Dvořák</td>
+                    <td>jan.dvorak@example.com</td>
+                    <td>+420 724 456 789</td>
+                </tr>
+                <tr>
+                    <td>Petra</td>
+                    <td>Horáková</td>
+                    <td>petra.horakova@example.com</td>
+                    <td>+420 737 654 321</td>
+                </tr>
+                <tr>
+                    <td>Tomáš</td>
+                    <td>Král</td>
+                    <td>tomas.kral@example.com</td>
+                    <td>+420 602 987 654</td>
+                </tr>
+                <tr>
+                    <td>Lucie</td>
+                    <td>Svobodová</td>
+                    <td>lucie.svobodova@example.com</td>
+                    <td>+420 777 123 987</td>
+                </tr>
+                <tr>
+                    <td>Martin</td>
+                    <td>Hlavica</td>
+                    <td>martin.hlavica@example.com</td>
+                    <td>+420 605 321 765</td>
+                </tr>
+                <tr>
+                    <td>Eva</td>
+                    <td>Černá</td>
+                    <td>eva.cerna@example.com</td>
+                    <td>+420 703 456 321</td>
+                </tr>
+                <tr>
+                    <td>David</td>
+                    <td>Beneš</td>
+                    <td>david.benes@example.com</td>
+                    <td>+420 608 222 444</td>
+                </tr>
+                <tr>
+                    <td>Klára</td>
+                    <td>Veselá</td>
+                    <td>klara.vesela@example.com</td>
+                    <td>+420 723 333 999</td>
+                </tr>
+                <tr>
+                    <td>Jakub</td>
+                    <td>Martínek</td>
+                    <td>jakub.martinek@example.com</td>
+                    <td>+420 790 111 222</td>
+                </tr>
+                <tr>
+                    <td>Petr</td>
+                    <td>Daňa</td>
+                    <td>petr.dana@example.com</td>
+                    <td>+420 731 061 111</td>
+                </tr>
+                <tr>
+                    <td>Vojtěch</td>
+                    <td>Dušek</td>
+                    <td>vojtech.dusek@example.com</td>
+                    <td>+420 777 444 333</td>
+                </tr>
+                <tr>
+                    <td>Vlastimil</td>
+                    <td>Mozga</td>
+                    <td>vlastimil.mozga@example.com</td>
+                    <td>+420 739 222 111</td>
+                </tr>
+                <tr>
+                    <td>Adéla</td>
+                    <td>Brhelová</td>
+                    <td>adela.brhelova@example.com</td>
+                    <td>+420 720 456 123</td>
+                </tr>
+                <tr>
+                    <td>Kristýna</td>
+                    <td>Jablonická</td>
+                    <td>kristyna.jablonicka@example.com</td>
+                    <td>+420 736 789 654</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                    Add User
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">E-mail address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phoneNumber" class="form-label">Phone number</label>
+                                    <input type="text" class="form-control" id="phoneNumber">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">
+                                <a class="nav-link text-white" href="products.html">Save</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
