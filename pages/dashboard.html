@@ -42,10 +42,31 @@
         </div>
         <!-- content -->
         <div class="col-sm-8 col-md-9 col-log-10 bg-light vh-100 p-4">
-            <h2>Dashboard</h2>
+            <h2>E-shop Statistics</h2>
+            <div class="row">
+                <!-- Bar Chart -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow p-3">
+                        <h5 class="card-title">Sales by Month</h5>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <!-- Pie Chart -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow p-3">
+                        <h5 class="card-title">Orders by Category</h5>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<!-- Bootstrap + Chart.js Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/_custom.js"></script>
 </body>
 </html>
